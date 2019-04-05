@@ -17,6 +17,7 @@ app.use(express.json());
 
 // Import routes 
 // ======================================================
+require("./app/routing/apiRoutes")(app);
 require("./app/routing/htmlRoutes")(app);
 // ======================================================
 
@@ -28,5 +29,3 @@ app.listen(PORT, () => {
   console.log("APP listening on PORT: " + PORT);
 })
 // ======================================================
-
-module.exports = app;
